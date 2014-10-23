@@ -1,8 +1,17 @@
-body{
+body {
 	margin:0;
 	padding:0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
-canvas{
-	background-color:#EFEFEF;
+p {
+	position:absolute;
+	bottom: 0;
+
+}
+canvas {
+	background-color: black;
 }

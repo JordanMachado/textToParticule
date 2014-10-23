@@ -1,10 +1,10 @@
 var canvas = require('canvas');
-
+var  particulesPositions = [];
 canvas.ctx.beginPath();
-canvas.ctx.fillStyle = 'rgb(255,255,255)';
+canvas.ctx.fillStyle = 'rgb(20,20,255)';
 canvas.ctx.font = '250pt Calibri';
 canvas.ctx.textAlign = 'center';
-canvas.ctx.fillText("Particules", canvas.el.width / 2, canvas.el.height / 2);
+canvas.ctx.fillText("P A R T I C U L E", canvas.el.width / 2, canvas.el.height / 2);
 canvas.ctx.closePath();
 
 
@@ -22,10 +22,18 @@ for (var y = 0; y < canvas.el.height; y++) {
 		var blue = data[((canvas.el.width * y) + x) * 4 + 2];
 		var alpha = data[((canvas.el.width * y) + x) * 4 + 3];
 
-			if(red != 0 && Math.random()>0.98)
-				circle(x,y,Math.random()*5);
+			if(red != 0 && Math.random()>0.992)
+			{
+				particulesPositions.push({x:x,y:y});
+				//circle(x,y,Math.random()*5);
+			}
 		
 	}
+}
+
+module.exports = 
+{
+	particulesPositions : particulesPositions,
 }
 
 

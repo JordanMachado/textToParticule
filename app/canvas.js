@@ -3,7 +3,9 @@ var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+ctx.globalCompositeOperation = 'lighter';
 document.body.appendChild(canvas);
+
 console.log('canvas');
 module.exports = 
 {
