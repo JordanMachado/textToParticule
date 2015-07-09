@@ -8,3 +8,13 @@
     * Brunch plugins and Bower dependencies: `npm install & bower install`.
 * Run:
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with 
+    * 
+
+
+
+```javascript
+
+var coucou = coucou;
+
+```
+
