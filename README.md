@@ -100,7 +100,26 @@ Second Tab:
 ```sh
 $ gulp watch
 ```
+```json
+{
+        "canvas": {
+          "template": "statis",
+          "config": {},
+          "assets": {
+            "background": "catalogs/test/gyro.jpg"
+          }
+        }
+```
+
 ```javascript
+{
+        "canvas": {
+          "template": "statis",
+          "config": {},
+          "assets": {
+            "background": "catalogs/test/gyro.jpg"
+          }
+        }
 ```
 (optional) Third:
 ```sh
